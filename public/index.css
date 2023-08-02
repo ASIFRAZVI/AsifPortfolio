@@ -192,7 +192,7 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: crimson;
+    color: rgb(218, 104, 129);
     font-weight: 500;
 }
 .home .home-content a{
@@ -211,6 +211,16 @@ section .title::after{
     color: crimson;
     background: none;
 }
+.typing {
+    font-size: 50px;
+    color: rgb(204, 140, 154);
+    border-right: 4px solid rgb(204, 140, 154);
+    padding-right: 8px;
+    animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+  
+ 
+ 
 
 /* about section styling */
 .about .title::after{
