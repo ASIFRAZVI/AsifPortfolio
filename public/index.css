@@ -192,7 +192,7 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-3 span{
-    color: rgb(218, 104, 129);
+    color: rgb(201, 93, 125);
     font-weight: 500;
 }
 .home .home-content a{
@@ -213,8 +213,8 @@ section .title::after{
 }
 .typing {
     font-size: 50px;
-    color: rgb(204, 140, 154);
-    border-right: 4px solid rgb(204, 140, 154);
+    color: rgb(201, 93, 125);
+    border-right: 4px solid rgb(201, 93, 125);
     padding-right: 8px;
     animation: typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
   }
@@ -347,6 +347,10 @@ section .title::after{
     width: 35%;
 }
 
+
+.skills-content .right .api::before{
+    width: 70%;
+}
 .skills-content .right .socket::before{
     width: 30%;
 }
@@ -354,6 +358,7 @@ section .title::after{
 .skills-content .right .git::before{
     width: 70%;
 }
+
 
 .skills-content .right .aws::before{
     width: 50%;
@@ -493,7 +498,7 @@ section .title::after{
     font-size: 18px;
     color: #333;
     margin-bottom: 10px;
-    margin-left: 26px;
+    margin-left: 15px;
 }
 
 
