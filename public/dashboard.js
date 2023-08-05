@@ -35,4 +35,6 @@ function erase() {
     }
 }
 
+
+
 setTimeout(type, 500);
