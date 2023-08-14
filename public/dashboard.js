@@ -38,3 +38,38 @@ function erase() {
 
 
 setTimeout(type, 500);
+
+
+
+   // List of background image URLs
+const backgroundImages = [
+    'url(bg5.jpg)' ,
+    'url(bg1.jpg)',
+    'url(bg2.jpg)',
+    'url(bg3.webp)',
+    'url(bg4.jpg)',
+    'url(protbg.jpg)',
+];
+
+let currentImageIndex = 0;
+const homeSection = document.querySelector('.home');
+
+// Function to apply crossfade transition between images
+function crossfadeImages() {
+    homeSection.style.backgroundImage = backgroundImages[currentImageIndex];
+    currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+
+    homeSection.classList.remove('fade-out', 'fade-in');
+    homeSection.classList.add('crossfade'); // Apply crossfade animation
+
+    // Reset animation classes after animation duration
+    setTimeout(() => {
+        homeSection.classList.remove('crossfade');
+    }, 1000); // Adjust timing as needed
+}
+
+// Change the background image every 5 seconds
+setInterval(crossfadeImages, 6000);
+
+
+
